@@ -6,7 +6,7 @@
 #    By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/08 06:07:42 by ppitavy           #+#    #+#              #
-#    Updated: 2021/01/08 06:15:22 by ppitavy          ###   ########.fr        #
+#    Updated: 2021/01/08 06:51:34 by ppitavy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,14 +21,14 @@ SRCS            =    ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_s
                     ft_putstr_fd.c  ft_strjoin.c ft_strmapi.c ft_strtrim.c
 OBJS            = $(SRCS:.c=.o)
 
-BONUS           =   ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+BONUS            =    ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
                     ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
                     ft_lstmap.c
-BONUS_OBJS      = $(BONUS:.c=.o)
+BONUS_OBJS        = $(BONUS:.c=.o)
 
-CC              = gcc
-RM              = rm -f
-CFLAGS          = -Wall -Wextra -Werror -I.
+CC                = gcc
+RM                = rm -f
+CFLAGS            = -Wall -Wextra -Werror -I.
 
 all:            $(NAME)
 
@@ -38,12 +38,12 @@ $(NAME):        $(OBJS)
 clean:
                 $(RM) $(OBJS) $(BONUS_OBJS)
 
-fclean:         clean
+fclean:            clean
                 $(RM) $(NAME)
 
-re:             fclean $(NAME)
+re:                fclean $(NAME)
 
-bonus:          $(OBJS) $(BONUS_OBJS)
+bonus:            $(OBJS) $(BONUS_OBJS)
                 ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
-.PHONY:         all clean fclean re bonus
+.PHONY:            all clean fclean re bonus
