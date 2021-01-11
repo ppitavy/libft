@@ -6,61 +6,44 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 07:43:07 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/08 03:01:48 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/11 02:23:54 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
-int SIZE(char *str)
+char	*join_init(char *str, char const *s1, char const *s2, int i)
 {
-    int i;
+	int j;
 
-    i = 0;
-    while (str[i] != '\0')
-        i++;
-        
-    return(i);
+	j = 0;
+	while (s1[i])
+	{
+		str[j] = s1[i];
+		i++;
+		j++;
+	}
+	i = 0;
+	while (s2[i])
+	{
+		str[j] = s2[i];
+		i++;
+		j++;
+	}
+	str[j] = '\0';
+	return (str);
 }
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    int S3_SIZE = 0;
-    char *s3;
-    int a = 0;
-    int b = 0;
+	int		len_t;
+	char	*str;
 
-    while (s1[b] != '\0')
-    {
-        s3[b] = s1[b] + 48;
-        b++; 
-    }
-
-    while (s2[a] != '\0')
-    {
-        s3[b] = s2[a] + 48;
-        a++;
-        b++;
-    }
-    printf("b = %d", b);
-    s3[b] = '\0';
-    
-    S3_SIZE = SIZE(s3);
-
-    if (!(s3 = malloc(sizeof(char) * (S3_SIZE + 1))))
-		return (s3 = 0);
-
-    return (s3);
-}
-
-int main()
-{
-    char *s1 = "Hello";
-    char *s2 = "World";
-
-    
-    printf("resultat = %s", ft_strjoin(s1, s2));
-
+	if (!s1 || !s2)
+		return (0);
+	len_t = (ft_strlen((char *)s1) + ft_strlen((char *)s2));
+	if (!(str = malloc(sizeof(char) * (len_t + 1))))
+		return (0);
+	join_init(str, s1, s2, 0);
+	return (str);
 }

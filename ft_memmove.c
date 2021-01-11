@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/05 02:46:06 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/08 03:01:15 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/11 07:48:08 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	int				i;
 
 	i = 0;
+	t3 = 0;
 	t1 = (unsigned char *)dest;
 	t2 = (unsigned char *)src;
 	while (n > 0)
