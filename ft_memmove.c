@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/05 02:46:06 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/12 07:37:27 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/12 07:57:07 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,17 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
-	unsigned char	*cpy;
+	char	*cpy;
 
 	if (!dest && !src)
 		return (0);
 	i = 0;
-	cpy = (unsigned char *)dest;
+	cpy = (char *)dest;
 	if (dest > src)
 	{
-		n--;
 		while (n > 0)
 		{
-			cpy[n] = ((unsigned char *)src)[n];
+			cpy[n - 1] = ((char *)src)[n - 1];
 			n--;
 		}
 	}
@@ -34,7 +33,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (i < n)
 		{
-			cpy[i] = ((unsigned char *)src)[i];
+			cpy[i] = ((char *)src)[i];
 			i++;
 		}
 	}
