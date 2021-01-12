@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 06:57:21 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/12 06:56:25 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/12 06:59:52 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	f = 0;
-	if (*s)
+	if (!s)
 		return (0);
 	while (s[i])
 	{
