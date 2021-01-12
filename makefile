@@ -6,7 +6,7 @@
 #    By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/08 06:07:42 by ppitavy           #+#    #+#              #
-#    Updated: 2021/01/11 07:40:55 by ppitavy          ###   ########.fr        #
+#    Updated: 2021/01/12 06:45:56 by ppitavy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS            =    ft_isalnum.c ft_isprint.c ft_memcmp.c \
                     ft_strnstr.c ft_tolower.c ft_bzero.c   ft_isascii.c ft_memccpy.c \
                     ft_memmove.c ft_strdup.c  ft_strlen.c  ft_strrchr.c \
                     ft_toupper.c ft_calloc.c  ft_isdigit.c ft_memchr.c  ft_memset.c  \
-                    ft_strjoin.c ft_strtrim.c
+                    ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c
 OBJS            = $(SRCS:.c=.o)
 
 BONUS           =   
