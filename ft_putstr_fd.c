@@ -6,13 +6,13 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 07:19:34 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/13 07:21:43 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/13 07:52:54 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
 		return ;

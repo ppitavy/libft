@@ -6,13 +6,13 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 06:57:21 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/12 06:59:52 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/13 07:55:44 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_getmal(char **str, int c, const char *s, int i)
+static int		ft_getmal(char **str, int c, const char *s, int i)
 {
 	int j;
 	int h;
@@ -40,7 +40,7 @@ static int	ft_getmal(char **str, int c, const char *s, int i)
 	return (1);
 }
 
-static char	**ft_getfull(char **str, int c, const char *s, int i)
+static char		**ft_getfull(char **str, int c, const char *s, int i)
 {
 	int j;
 	int h;
@@ -67,11 +67,11 @@ static char	**ft_getfull(char **str, int c, const char *s, int i)
 	return (str);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
-	char **str;
-	int i;
-	int f;
+	char	**str;
+	int		i;
+	int		f;
 
 	i = 0;
 	f = 0;

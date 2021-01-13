@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 02:32:52 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/11 07:54:18 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/13 07:54:11 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static char		*ft_getfull(const char *s1, char *str, int f, int i)
 
 char			*ft_strtrim(char const *s1, char const *set)
 {
-	int	i;
+	int				i;
 	unsigned int	f;
 	unsigned int	g;
 	char			*str;
