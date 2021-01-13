@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 07:28:17 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/13 07:35:49 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/13 07:45:52 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	if (!s)
 		return (0);
-	if (!(str = malloc(sizeof(char) * (ft_strlen(s) + 1))))
+	if (!(str = malloc(sizeof(char) * (ft_strlen((char *)s) + 1))))
 		return (0);
 	while (s[i])
 	{
