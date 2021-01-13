@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 02:26:23 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/08 03:02:03 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/01/13 07:59:24 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
+	if (!src)
+		return (0);
 	if (size > 0)
 	{
 		while (src[i] && i < (size - 1))
