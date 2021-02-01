@@ -6,7 +6,7 @@
 /*   By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 06:57:21 by ppitavy           #+#    #+#             */
-/*   Updated: 2021/01/13 07:55:44 by ppitavy          ###   ########.fr       */
+/*   Updated: 2021/02/01 10:34:04 by ppitavy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ static int		ft_getmal(char **str, int c, const char *s, int i)
 		else
 			i++;
 	}
-	if (!(str[h] = malloc(sizeof(char))))
-		return (0);
 	return (1);
 }
 
