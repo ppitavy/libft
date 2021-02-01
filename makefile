@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: ppitavy <ppitavy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/08 06:07:42 by ppitavy           #+#    #+#              #
-#    Updated: 2021/01/13 07:41:53 by ppitavy          ###   ########.fr        #
+#    Updated: 2021/02/01 02:22:57 by ppitavy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRCS            =    ft_isalnum.c ft_isprint.c ft_memcmp.c \
 					ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c
 OBJS            = $(SRCS:.c=.o)
 
-BONUS           =   
+BONUS           =	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 BONUS_OBJS      = $(BONUS:.c=.o)
 
 CC              = gcc
